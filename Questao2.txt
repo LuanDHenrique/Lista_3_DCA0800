@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main (void) {
+int x, mult;
+x=0;
+
+printf("Multiplos de 7= ");
+do{ 
+  mult=x*7;
+  x++;
+  if(mult>200){
+  break;
+  }
+  printf("%d, ", mult);
+
+}while(mult<200);
+
+return 0;
+}

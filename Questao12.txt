@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main(void) {
+
+  int x=2, dif, cont=1, p1, p2;
+
+  while(cont<=12){
+  if((x==2)||(x==3)||(x==5)||(x==7)){
+  cont++;
+  }else if ((x%1==0)&&(x%x==0)&&(x%2!=0)&&(x%3!=0)&&(x%5!=0)&&(x%7!=0)){
+  if(cont==6){
+    p1=x;
+    printf("primo6=%d\n", x);
+   }
+   if(cont==12){
+     p2=x;
+     printf("primo12=%d\n", x);
+   }
+   cont++;
+   }
+   x++;
+  }
+ dif=p2-p1;
+ printf("A diferença entre o 6 numero primo e o 12 numero primo= \n%d-%d= %d", p2, p1, dif);
+
+  return 0;
+}

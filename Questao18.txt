@@ -1,0 +1,11 @@
+#include <stdio.h>
+
+int main(void) {
+float C, F;
+
+  printf("Digite o numero de gruas Farenheit: ");
+  scanf("%f", &F);
+  C=(F-32)/1.8;
+  printf("Graus Celsius= %.2f", C);
+  return 0;
+}

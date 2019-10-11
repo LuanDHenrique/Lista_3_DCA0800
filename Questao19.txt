@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+  int i1, i2, num;
+
+  srand(time(0));
+  
+  printf("Digite o inicio do intervalo: ");
+  scanf("%d", &i1);
+  printf("Digite o final do intervalo: ");
+  scanf("%d", &i2);
+
+  if(i1<i2){
+  num= i1+rand()%(i2-i1);
+  printf("Numero= %d", num);
+  }
+  if(i2<i1){
+  num= i2+rand()%(i1-i2);
+  printf("Numero= %d", num);
+  }
+  if(i1==i2){
+    printf("Os numeros nao formam um intervalo.");
+  }
+  return 0;
+}

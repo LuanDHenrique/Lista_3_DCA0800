@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+int main(void) {
+  int i, n, x, med;
+  x=0;
+  n=0;
+
+  for (i=13; i<=73; i++){
+    if(i%2==0){
+      x=x+i;
+      n=n+1;
+    }
+  }
+  med=x/n;
+  printf("Media Aritmetica= %d/%d = %d", x, n, med); 
+  return 0;
+}

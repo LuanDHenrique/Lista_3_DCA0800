@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <time.h>
+
+int main(){
+  int cont=0, div, num;
+
+  srand(time(0));
+  
+  printf("Numeros= ");
+  while(cont<=20){
+    num= 1000+rand()%1000;
+  div=num%11;
+  if(div==5){
+  printf("%d,", num);
+  cont++;
+   }
+  }
+  return 0;
+}

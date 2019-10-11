@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main(void) {
+int x, L, quad, cont=0;
+
+printf("Digite valor de L: ");
+scanf("%d", &L);
+for(x=1;x<L;x++){
+quad=x*x;
+if(quad>L){
+  cont++;
+  if(cont==1){
+  break;
+  }
+ }
+} 
+printf("Menor numero inteiro= %d", x);
+  return 0;
+}

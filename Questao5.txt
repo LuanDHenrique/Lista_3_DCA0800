@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int main (void) {
+int i, fat, n;
+fat=1;
+
+printf("Escolha um numero: ");
+scanf("%d", &n);
+for(i=n; i>0; i--){
+  fat=fat*i;
+}
+printf("Fatorial de %d= %d", n, fat);
+
+return 0;
+}

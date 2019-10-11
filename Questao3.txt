@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main (void) {
+int x, div;
+
+printf("Divisores de 4= ");
+for(x=1; x<100; x++){
+  div=x%4;
+  if(div==0){
+    printf("%d, ", x);
+  }
+}
+return 0;
+}

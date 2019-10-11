@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+int main (void) {
+int n, i, div;
+
+printf("Escolha um numero: \n");
+scanf("%d", &n);
+printf("Divisores de %d= ", n);
+for(i=1; i<=n; i++){
+  div=n%i;
+  if(div==0){
+  printf("%d, ", i);
+  }
+}
+return 0;
+}
